@@ -6,7 +6,11 @@ You can directly download and exectute the image from dockerhub via:
 ``` bash
 $ docker run --privileged -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY --network host -v /dev:/dev -v /mnt:/mnt -v timongentzsch/aarch64-pupil
 ```
-
+to start pupil labs:
+``` bash
+$ workon pupil
+$ python main.py capture
+```
 ## Development
 To quickly iterate your build process and application please refer to the scripts provided in my other [repo](https://github.com/timongentzsch/Jetson_Ubuntu20_Images/tree/master/scripts).
 ## Work with the provided scripts
