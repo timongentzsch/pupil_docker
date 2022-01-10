@@ -4,7 +4,7 @@ Although this repository is dedicated to the installation of Pupil Labs on an ar
 ## Usage
 You can directly download and exectute the image from dockerhub via:
 ``` bash
-$ docker run --privileged -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY --network host -v /dev:/dev -v /mnt:/mnt -v pupil
+$ docker run --privileged -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY --network host -v /dev:/dev -v /mnt:/mnt -v timongentzsch/aarch64-pupil
 ```
 
 ## Development
