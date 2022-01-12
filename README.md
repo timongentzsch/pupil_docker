@@ -1,15 +1,18 @@
-# aarch64 docker image including source build of [Pupil Labs Pupil](https://github.com/pupil-labs/pupil.git) and [ROS2](https://github.com/ros2)
+# aarch64 docker image including source build of [Pupil Labs Pupil](https://github.com/pupil-labs/pupil.git) and [ROS2 (foxy)](https://github.com/ros2)
+## Info
+The image is based on Ubuntu 18.04, since this is the recommended distro for pupil labs. Therefore it is not possible to install the ros2 apt packages directly, but to build them from source. 
+
 Although this repository is dedicated to the installation of Pupil Labs on an arm64 linux platform, it should also be a useful reference on other platforms by rebuilding the Dockerfile with slight modifications.
 
 ## Usage
 You can directly download and exectute the image from dockerhub via:
 ``` bash
-$ docker run --privileged -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY --network host -v /dev:/dev -v /mnt:/mnt timongentzsch/aarch64-pupil
+docker run --privileged -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY --network host -v /dev:/dev -v /mnt:/mnt timongentzsch/aarch64-pupil
 ```
 to start pupil labs:
 ``` bash
-$ workon pupil
-$ python main.py capture
+workon pupil
+python main.py capture
 ```
 ## Development
 To quickly iterate your build process and application please refer to the scripts provided in my other [repo](https://github.com/timongentzsch/Jetson_Ubuntu20_Images/tree/master/scripts).
