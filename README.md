@@ -4,6 +4,7 @@ The image is based on Ubuntu 18.04, since this is the recommended distro for pup
 
 Although this repository is dedicated to the installation of Pupil Labs on an arm64 linux platform, it should also be a useful reference on other platforms by rebuilding the Dockerfile with slight modifications.
 
+>  **note:** Tested on M1 Mac with parallels (Ubuntu20.04 VM)
 ## Usage
 You can directly download and exectute the image from dockerhub via:
 ``` bash
